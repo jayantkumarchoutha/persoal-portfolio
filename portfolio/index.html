@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAYANT | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header>
+        <a href="./index.html" style="color: #807f7f; text-decoration-line: none;"><h1>JAYANT</h1></a>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./about.html#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="./assets/jayant_kumar_resume().pdf" target="_blank" download class="resume-btn">Resume</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="overlay"></div>
+        <div class="main">
+            <img src="./assets/profile.jpg" alt="Profile photo" class="profile-pic" />
+            <div>
+                <h1>I’m <span id="typing-text"></span></h1>
+                <h2>About Me</h2>
+                  <p>I'm a Web Developer with good hands-on experience in real-world projects.
+               <br> I'm passionate about creating user-friendly and visually appealing interfaces. i'm good in building frontend applications</p>
+                <a href="./about.html"><button id="btn">About Me</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+       <a href="./project1.html#project-container1">
+         <div class="project-grid">
+            <div class="project-card">
+                <img src="./assets/zepto-main.webp" alt="Project 1" />
+                <h3 class="brief">Zepto-clone app</h3>
+                <p class="brief">A fast and responsive grocery delivery web app inspired by Zepto. Built with react components and tailwind CSS, it features product listings, add-to-cart functionality, category filters, and a clean UI for a seamless user experience.</p>
+            </div>
+       </a>
+            <a href="./project1.html#project-container2">
+                <div class="project-card">
+                <img src="./assets/kris-hrms.png" alt="Project 2" />
+                <h3 class="brief">kris-hrms app</h3>
+                <p class="brief">An employee-focused HR management system for tracking and managing leave requests. Features include leave application, status tracking, and basic admin controls, designed with a user-friendly interface.</p>
+            </div>
+            </a>
+            <a href="./project1.html#project-container3">
+                <div class="project-card">
+                <img src="./assets/personal portfolio.png" alt="Project 3" />
+                <h3 class="brief">Personal Portfolio</h3>
+                <p class="brief">A responsive and minimal portfolio showcasing my projects, skills, and resume. Built with HTML, CSS, and JavaScript to highlight my work and provide easy navigation for recruiters and clients.</p>
+            </div>
+            </a>
+        </div>
+    </section>
+
+   
+<!-- <a href="#contact" class="contacts">Contact</a> -->
+
+<!-- Contact Section -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  
+  <form id="contactForm" action="https://formspree.io/f/mzzrykzk" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <input type="tel" name="phone" placeholder="Your Phone Number" required />
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+    <footer>
+        <p>&copy; 2025 jayant kumar choutha. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

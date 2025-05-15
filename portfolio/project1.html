@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects.css">
+</head>
+
+<body>
+    <header>
+        <a href="./index.html" style="color: #807f7f; text-decoration-line: none;">
+            <h1>JAYANT</h1>
+        </a>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./about.html#skills">Skills</a>
+            <a href="./project1.html">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="jayant_kumar_resume().pdf" target="_blank" class="resume-btn">Resume</a>
+        </nav>
+    </header>
+
+    <h1>projects</h1>
+    <section id="project-container1">
+        <div>
+            <h1>🛒 Zepto Clone – Instant Grocery Delivery Web App</h1>
+            <div>
+                <h3>🔍 Overview</h3>
+                <p>The Zepto Clone is a front-end web application inspired by the popular instant grocery delivery
+                    service, Zepto. This project simulates a real-world e-commerce experience and was developed to
+                    enhance my skills in React, state management, and responsive UI design.</p>
+            </div>
+            <div>
+                <h3>🎯 Purpose</h3>
+                <p>To replicate the functionality and user experience of a modern grocery delivery app, focusing on:
+
+                    Front-end development best practices.
+
+                    Component-based architecture.
+
+                    Real-world application features like cart management, search, and filtering.
+
+                    Mobile-first responsive design.</p>
+            </div>
+            <div>
+                <h3>🚀 Key Features</h3>
+                <p>✅ Responsive UI built with React and Tailwind CSS.
+
+                    🔎 Real-time Search and Category Filtering.
+
+                    🛒 Cart Functionality with add/remove/update capabilities.
+
+                    💾 Cart persistence using localStorage.
+
+                    🔐 Optional User Authentication (via Firebase or mock auth).
+
+                    📦 Product Listing Pages grouped by categories.
+
+                    🧾 Order Summary & Checkout UI.
+
+                    🛠️ Admin Dashboard for product management (optional).
+
+                </p>
+            </div>
+            <div>
+                <h3> Challenges & Solutions</h3>
+                <p>One big challenge was managing application state across many components like the cart, product list,
+                    and filters.
+
+                    I solved this by using React Context API (or Redux, if you used it) to centralize state and make it
+                    easier to manage and debug.
+
+                    Another challenge was ensuring the UI was truly responsive, especially the category scroll and cart
+                    sidebar. I overcame this by adopting a mobile-first design and testing across different screen sizes
+                    using Chrome DevTools.
+
+                    I also had to deal with performance issues when filtering large lists, so I used memoization and
+                    debounce to optimize re-renders.</p>
+            </div>
+            <div>
+                <h3>Final learning outcome</h3>
+                <p>Deepened my understanding of React hooks, component structuring, and state flow.
+
+                    Improved skills in UI/UX design, responsive layouts, and performance optimization.
+
+                    Learned to debug, test, and simulate real-world product features.
+
+                    Gained experience that closely resembles building a production-grade front-end application.</p>
+            </div>
+            <div>
+                <img src="./assets/Screenshot 2025-05-14 180543.png" alt="registration page" class="imgs">
+                <img src="./assets/Screenshot 2025-05-14 180532.png" alt="login page" class="imgs">
+                <img src="./assets/Screenshot 2025-05-14 180631.png" alt="product-cards" class="imgs">
+            </div>
+        </div>
+    </section>
+
+    <section id="project-container2">
+        <div>
+            <h1>🧑‍💼 Kris - HRMS Project</h1>
+        </div>
+        <div>
+            <h3> Overview</h3>
+            <p>Kris - HRMS is a full-featured Human Resource Management System designed to streamline employee and
+                administrative tasks within an organization. The application consists of two main panels:
+
+                User Panel – For employees to manage their profiles, attendance, leaves, and documents.
+
+                Admin Panel – For HR/admins to manage employees, approvals, announcements, and reports.
+
+                The project replicates real-world HR systems used in enterprises and was built to deepen my
+                understanding of multi-role front-end applications, component architecture, and state management.
+
+            </p>
+        </div>
+        <div>
+            <h3>🎯 Purpose</h3>
+            <p>To create a centralized system for managing HR-related functions digitally.
+
+                To improve efficiency in employee tracking, leave management, and organizational communication.
+
+                To simulate building a role-based application with complex state logic and reusable components.
+
+            </p>
+        </div>
+        <div>
+            <h3>Panels & Key Features</h3>
+            <div>
+                <h3> User Panel Features</h3>
+                <p>🧾 Dashboard View: Personalized summary of attendance, leaves, tasks, and announcements.
+
+                    🧑 Profile Management: View/update personal details, contact info, and documents.
+
+                    📅 Attendance Tracking: Daily check-in/check-out with date and time.
+
+                    🌴 Leave Management: Apply for leaves, view status, and leave history.
+
+                    🗂 Document Upload: Upload and manage official documents (e.g., ID, certificates).
+
+                    📢 Company Announcements: View global messages or role-based notices.
+
+                </p>
+            </div>
+            <div>
+                <h3> Admin Panel Features</h3>
+                <p>👥 Employee Management: Add, update, or remove employees.
+
+                    📊 Leave Requests: View, approve, or reject leave applications.
+
+                    🗓️ Attendance Reports: Track attendance logs of all employees.
+
+                    📂 Document Verification: Review and verify submitted employee documents.
+
+                    📢 Post Announcements: Create/edit announcements for specific teams or all users.
+
+                    📈 HR Dashboards: Visual analytics for workforce stats.
+
+                </p>
+            </div>
+            <div>
+                <h3>Challenges Faced & How We Solved Them</h3>
+                <p>Challenges Faced & How We Solved Them:
+
+                    Role-based Routing & Access Control:
+                    Implemented PrivateRoute and AdminRoute using React Router to restrict access based on user roles.
+
+                    State Management Across Views:
+                    Managed shared and component-level state efficiently using React Context API or Redux.
+
+                    Data Synchronization Between User/Admin Panels:
+                    Maintained consistent data flow via shared API endpoints or mock backend (e.g., JSON Server or
+                    Firebase).
+
+                    Form Validation:
+                    Ensured input validation using Formik + Yup or custom logic for accurate form handling in profiles,
+                    leave forms, etc.
+
+                    UI Consistency Across Components:
+                    Built a centralized design system using reusable components (buttons, cards, modals, inputs).
+
+                    Real-time Updates (Optional):
+                    Simulated live updates for attendance or announcements using polling or WebSocket patterns.</p>
+            </div>
+            <div>
+                <h3>Final Learning Outcomes</h3>
+                <p>Technical Skills:
+                    Deepened understanding of React hooks, component reuse, and modular architecture.
+
+                    Learned how to implement role-based authentication and routing.
+
+                    Improved state management and form handling across a complex, multi-panel application.
+
+                    Built familiarity with data tables, conditional rendering, and role-specific UI logic.</p>
+                <p>Project/Team Skills:
+                    Learned how to plan and organize large-scale apps.
+
+                    Practiced clean code principles, file structure optimization, and modular CSS/Tailwind usage.
+
+                    Understood the importance of UX/UI consistency in enterprise-level apps.
+
+                    Simulated collaboration between HR and employee roles with realistic workflows. </p>
+            </div>
+            <div>
+                <img src="./assets/Screenshot 2025-02-07 155932.png" alt="admin-panel" class="imgs">
+                <img src="./assets/Screenshot 2025-02-11 152157.png" alt="user-panel" class="imgs">
+            </div>
+        </div>
+    </section>
+
+    <section id="project-container3">
+        <h1>Personal Portfolio </h1>
+        <div>
+            <h3>Overview</h3>
+            <p>This is a simple and responsive personal portfolio website built using HTML, CSS, and JavaScript. It
+                highlights my profile, technical skills, and front-end projects in a clean and professional layout.</p>
+        </div>
+        <div>
+            <h3>Purpose</h3>
+            <p>To create a personal space on the web where I can showcase:
+
+                My background and skills
+
+                Featured projects with live links
+
+                Contact information for recruiters or collaborators</p>
+        </div>
+        <div>
+            <h3>Key Features</h3>
+            <p>Fully responsive design using flexbox and media queries
+
+                Smooth scrolling navigation and interactive elements with JavaScript
+
+                Sections: Home, About, Skills, Projects, and Contact
+
+                Custom styling with pure CSS, no external frameworks</p>
+        </div>
+        <div>
+            <h3>What I Learned</h3>
+            <p>Structuring multi-section layouts with HTML
+
+                Styling for responsiveness and accessibility
+
+                Adding interactivity using vanilla JavaScript
+
+                Deploying a static site using GitHub Pages or Netlify
+
+            </p>
+        </div>
+    </section>
+</body>
+
+</html>
